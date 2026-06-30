@@ -40,15 +40,16 @@ body {
 
 .app-container {
   width: 100%;
-  max-width: 1200px;
   padding: 2rem;
-  margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   overflow-y: auto;
   flex: 1;
 }
 
 .dashboard-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   background: var(--surface);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -222,7 +223,7 @@ body {
     align-items: flex-start;
     gap: 0.5rem;
     margin-bottom: 0.75rem;
-    padding-top: 2rem;
+    padding-top: 3.5rem;
   }
 
   .header-top-row {
