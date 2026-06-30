@@ -1,0 +1,37 @@
+# Your Android App is Ready! 🚀
+
+I have successfully wrapped your web application into a native Android project using Capacitor. All of this was done safely inside a brand new folder on your Desktop (`SeaLevelMobileApp`), so your original project is completely untouched!
+
+## What was done:
+1. Created a copy of the project in `Desktop/SeaLevelMobileApp`
+2. Updated your data fetching paths so they work inside a native Android container.
+3. Installed Capacitor dependencies (`@capacitor/core`, `@capacitor/cli`, `@capacitor/android`).
+4. Re-compiled your web app for production.
+5. Injected your compiled web app into a brand new Android Studio project.
+
+## How to build for the Google Play Store:
+
+You will need **Android Studio** installed on your PC to complete these final steps.
+
+### Step 1: Open the Project
+1. Open Android Studio.
+2. Click **Open** (or File -> Open).
+3. Navigate to your desktop: `Desktop/SeaLevelMobileApp/android` and select the **`android`** folder. 
+4. Wait for Android Studio to sync the project (this might take a few minutes the first time as it downloads Gradle dependencies).
+
+### Step 2: Test on an Emulator or Device (Optional)
+- You can plug in your Android phone (with USB debugging enabled) or select a virtual emulator at the top of the Android Studio window.
+- Click the green **Play (Run)** button to launch your app and test it!
+
+### Step 3: Build the Release Version for Google Play
+When you are ready to upload to the Play Store:
+1. In Android Studio, click **Build** -> **Generate Signed Bundle / APK...** from the top menu.
+2. Select **Android App Bundle (.aab)**. *(This is the format required by the Google Play Store)*.
+3. You will be prompted to create or select a **Keystore**. If this is your first time, click **Create new...** and fill out the password and details. Make sure you safely store this password and keystore file, you'll need them for future updates!
+4. Select **release** for the build variant.
+5. Click **Finish**.
+
+Android Studio will compile your code into an `.aab` file which you can upload directly to the Google Play Console!
+
+> [!TIP]
+> If you make changes to your web app's UI or logic in the future, just run `npm run build` and then `npx cap sync` in the `SeaLevelMobileApp` folder. This updates the Android project with your latest code!
